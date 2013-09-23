@@ -23,30 +23,30 @@ Here's some examples of how to use the commands and settings of the plugin. Thes
 
 1. Change default message
 
-    :set foo-default-message=greeting
-    :foo
+        :set foo-default-message=greeting
+        :foo
 
     **Result**: Pop-up dialog: "Hello there!"
 
 1. Change default display from pop-up to status line
 
-    : set foo-display=s
-    : foo -name=farewell
+        : set foo-display=s
+        : foo -name=farewell
 
     **Result**: Status line message: "See you later"
 
 1. Display an arbitrary message, and override the default display mode
 
-    :foo -message="Sneak attack" -dialog-only
+        :foo -message="Sneak attack" -dialog-only
 
     **Result**: Pop-up dialog: "Sneak attack"
 
 1. Add a new named message and set it to the default
 
-    :foo fds=ds
-    :foo-add-message -name congrats -message="Congratulations! That was great."
-    :set fdm=congrats
-    :foo
+        :foo fds=ds
+        :foo-add-message -name congrats -message="Congratulations! That was great."
+        :set fdm=congrats
+        :foo
 
     **Result**: Pop-up dialog and status line display: "Congratulations! That was great."
 
